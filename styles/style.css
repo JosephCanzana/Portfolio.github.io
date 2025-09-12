@@ -8,22 +8,135 @@ body{
     min-width: 100%;
 }
 
+/*navbar general styling */
 .navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 48px;
+    padding: 15px 48px;
     margin: 0;
-    background-color: #f9f9fb;
-    font-size: 24px;
+    background-color: #C1E1C1;
 }
 
+
+.nav-link{
+    margin: 10px;
+    font-weight: 530;
+    font-size: 22px;
+    text-decoration: none;
+    color: #173017;
+    transition: ease-in-out 0.1s;
+}
+
+.nav-link:hover{
+    color: #048affff;
+    font-size: 24px;
+    
+}
+
+.navbar > a{
+    color: #173017;
+    font-weight: 750;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 2px;
+    padding: 0;
+    transition: ease-in-out 0.1s;
+}
+
+.navbar > a:hover{
+    color: #048effff;
+    scale: 110%;
+}
+
+/* Main content of pages */
 .main-content{
     min-height: 88vh;
-    background-color: #f9fbf9;
+    background-color: #d2e8d2ff;
     color: #1a1a1a;
     padding: 10px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+/* General designs */
+.page-header{
+    font-size: 40px;
+    font-weight: 760;
+    margin-top: 28px;
+    margin-bottom: 25px;
+}
+
+.motto {
+    font-size: 25px; 
+    font-style: italic;
+    color: #555; 
+    margin-top: -20px; 
+}
+
+.split-container{
+    padding: 0px 150px;
+    margin: 15px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+/* Home page styling */
+.img-greet{
+    min-width: 35vw;
+    border-radius: 20px;
+}
+
+.p-introductory{
+    margin: 20px 50px 0px;
+    font-size: 24px;
+    font-weight: 450;
+    text-align: center;
+}
+
+/* About me styling */
+.detailed-about-container{
+    width: 50%;
+    margin: 30px 10px 10px;
+}
+
+.skill-container{
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #b5accfff;
+    box-shadow: 4px 2px 6px #00000046;
+    border-radius: 15px;
+}
+
+.skill-container > h1{
+    font-size: 40px;   
+    font-weight: 700;
+    margin: 10px;
+    text-shadow: 2px 4px 6px #0000002b;;
+}
+
+.p-about{
+    margin: 20px 10px 0px;
+    font-size: 20px;
+    font-weight: 450;
+    text-align: center;
+}
+
+.skill-logo {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    object-fit: contain;
+    margin: 20px;
+    filter: drop-shadow(2px 4px 6px #00000055)
 }
 
 .footer-content{
@@ -31,23 +144,10 @@ body{
     align-items: center;
     justify-content: center;
     padding: 7px;
-    background-color: #f2f5f2;
-    color: #2e7d32;
+    background-color: #B0D9B0;
+    color: #527a54ff;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
+    font-style: italic;
     margin: 0;
-}
-
-.nav-link{
-    margin: 10px;
-    font-style: normal;
-    text-decoration: none;
-    color: #1b5e20;
-}
-
-.navbar > h1{
-    color: #1b5e20;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
 }
