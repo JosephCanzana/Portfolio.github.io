@@ -2,6 +2,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     margin: 0;
+    background-color: #334133ff;
 }
 
 .wrapper{
@@ -84,7 +85,7 @@ body{
     min-width: 75vw;
     height: auto;
     padding: 20px 20px;
-    margin: 10px 300px;
+    margin: 10px 300px 20px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -109,6 +110,37 @@ body{
     font-size: 24px;
     font-weight: 450;
     text-align: center;
+}
+
+.quick-button{
+    margin: 20px;
+    min-width: 75vw;
+    height: 100px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #C1E1E1;
+    box-shadow: 4px 2px 6px #00000062;
+    transition: ease-in-out 0.2s;
+    font-size: 40px;
+}
+
+.quick-button:hover{
+    background-color: #007AFF;
+}
+
+.quick-button > a{
+    text-decoration: none;
+    color: #333030ff;
+    text-shadow: 4px 2px 6px #00000062;
+    font-weight: 700;
+    transition: ease-in-out 0.2s;
+}
+
+.quick-button > a:hover{
+    font-size: 50px;
+    color:#00ff59
 }
 
 /* About me styling */
@@ -189,7 +221,6 @@ body{
     width: 50vw;
     margin: 10px;
     padding: 10px;
-    background-color: #C1E1E1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,7 +231,6 @@ body{
 
 .certificate-group:hover{
     width: 70vw;
-    background-color: #afced8ff;
 }
 
 .certificate-group > img{
@@ -341,11 +371,66 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    size: 35px;
+    flex-direction: column;
     padding: 7px;
-    background-color: #91CA91;
-    color: #173017;
-    font-size: 16px;
-    font-weight: 500;
+    background-color: #252b25ff;
+    margin-top: 25px;
+}   
+
+.footer-content > h1{
     font-style: italic;
+    font-size: 24px;
+    font-weight: 600;
+    color: #4a5f4aff;
+    margin: 0px;
+}
+
+.footer-content > p{
     margin: 0;
+    color: #6aa36aff;
+    font-size: 15px;
+    font-weight: 450;
+}
+
+.footer-content > p > a{
+    margin: 0;
+    color: #a1dfa1ff;
+    font-size: 15px;
+    font-weight: 60;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+.footer-content > p > a:hover{
+    font-size: 20px;
+    color: #007AFF;
+}
+
+.footer-content > h4{
+    margin: 10px;
+    font-style: italic;
+    color: #6aa36aff;
+    font-size: 15px;
+    font-weight: 60;
+}
+
+.footer-github{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 0px;
+    padding: 5px;
+    transition: ease-in-out 0.2s;
+}
+
+.footer-github:hover{
+    width: 90px;
+    height: 90px;
+}
+
+.footer-head{
+    font-size: 25px; 
+    font-style: italic;
+    color: #799779ff;
+    margin: 10px 0px 0px 5px; 
 }
